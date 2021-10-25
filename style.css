@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+#icon{
+    position: absolute;
+    left: 30%;
+    top: 25%;
+    width: 30px;
+    cursor: pointer;
+}
+ nav ul{
+          text-align: right;
+ }
+
+:root{
+    
+    --primary-color: #edf2fc;
+    --secondory-color: #0d0e0f;
+    --ss-color: #edf2fc;
+}
+
+.dark-theme{
+
+    --primary-color: #000106;
+    --secondory-color: #fff;
+    --ss-color: #000106;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+} 
+
+
+body {
+    background: var(--primary-color);
+    line-height: 1;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    
+    width: 100%;
+    height: 56px;
+    background: var(--ss-color);
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+
+.menu li + li {
+    margin-left: 5rem;
+}
+
+.menu a {
+    display: inline-block;
+    font-size: 1.125rem;
+    line-height: 1.33333333333;
+    color: var(--secondory-color);
+    text-decoration: none;
+    padding: 1.125rem 0;
+}
+
+.menu a:hover {
+    color: #4dc8ff;
+}
+
+
+main {
+    width: 100%;
+    height: 100%;
+    margin-top: 65px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+main section {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+main section.center {
+    align-items: center;
+}
+
+main section.left {
+    align-items: start;
+    
+}
+
+main section p {
+    font-size: 1.125rem;
+    line-height: 1.33333333333;
+    color: var(--secondory-color);
+
+    margin-top: 1.25rem;
+    max-width: 600px;
+    padding-left: 1.75rem;
+}
+
+.title-box {
+    display: flex;
+    align-items: center;
+}
+
+.title-box img {
+    width: 50px;
+    height: 50px;
+}
+
+.title {
+    font-size: 4rem;
+    line-height: 1.125;
+    color: var(--secondory-color);
+}
+    
+.title span {
+    color: #4dc8ff;
+}
+    
+.title:first-child {
+    padding-left: 1.25rem;
+    border-left: 0.5rem solid var(--secondory-color);
+}
+
+#nedsc {
+    position: absolute;
+    left: 1%;
+    top: 110%;
+    width: 216px;
+    height: 216px;
+    border-radius: 50%;
+}
+
+.nedsc-text {
+    color:var(--secondory-color);
+    position: absolute;
+    left: 6%;
+    top: 145%;
+}
+
+#khun {
+    position: absolute;
+    left: 17%;
+    top: 110%;
+    width: 216px;
+    height: 216px;
+    border-radius: 50%;
+
+}
+
+.khun-text {
+    color:var(--secondory-color);
+    position: absolute;
+    left: 22%;
+    top: 145%;
+}
+
+#jape {
+    position: absolute;
+    left: 33%;
+    top: 110%;
+    width: 216px;
+    height: 216px;
+    border-radius: 50%;
+}
+
+.jape-text {
+    color:var(--secondory-color);
+    position: absolute;
+    left: 37%;
+    top: 145%;  
+}
+
+#stuff {
+    position: absolute;
+    left: 49%;
+    top: 110%;
+    width: 216px;
+    height: 216px;
+    border-radius: 50%;
+}
+
+.stuff-text {
+    color:var(--secondory-color);
+    position: absolute;
+    left: 54%;
+    top: 145%; 
+}
+
+#angel{
+    position: absolute;
+    left: 65%;
+    top: 110%;
+    width: 216px;
+    height: 216px;
+    border-radius: 50%;
+}   
+
+.angel-text{
+    color:var(--secondory-color);
+    position: absolute;
+    left: 70%;
+    top: 145%;   
+}
+
+#blucker{
+    position: absolute;
+    left: 81%;
+    top: 110%;
+    width: 216px;
+    height: 216px;
+    border-radius: 50%;
+}
+
+.blucker-text{
+    color:var(--secondory-color);
+    position: absolute;
+    left: 85%;
+    top: 145%;
+}
+
+ /* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
+    e 10px de altura para a barra horizontal */
+    ::-webkit-scrollbar {
+        width:10px;
+        height: 10px;
+        }
+        
+        /* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+        ::-webkit-scrollbar-track {
+        background:#333;
+        }
+        
+        /* aqui é a alça da barra, que demonstra a altura que você está na página
+        estou colocando uma cor azul clara nela*/
+        ::-webkit-scrollbar-thumb {
+        background: #2e9dd8;
+        }
+    
+    /* degrade para a barra vertical */
+    ::-webkit-scrollbar-thumb {
+        background: #2e9dd8;
+        background: -moz-linear-gradient(top, #333333 0%, #3f69b1 25%, #2e9dd8 50%, #3f69b1 76%, #333333 100%);
+        background: -webkit-linear-gradient(top, #333333 0%,#3f69b1 25%,#2e9dd8 50%,#3f69b1 76%,#333333 100%);
+        background: linear-gradient(to bottom, #333333 0%,#3f69b1 25%,#2e9dd8 50%,#3f69b1 76%,#333333 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#333333',GradientType=0 );
+        }
+        
+        /* degrade para a barra horizontal com a direção do degrade alterada */
+        ::-webkit-scrollbar-thumb:horizontal {
+        background: #2e9dd8;
+        background: -moz-linear-gradient(left, #333333 0%, #3f69b1 25%, #2e9dd8 50%, #3f69b1 76%, #333333 100%);
+        background: -webkit-linear-gradient(left, #333333 0%,#3f69b1 25%,#2e9dd8 50%,#3f69b1 76%,#333333 100%);
+        background: linear-gradient(to right, #333333 0%,#3f69b1 25%,#2e9dd8 50%,#3f69b1 76%,#333333 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#333333',GradientType=0 );
+        }
+
+
+    .scroll::-webkit-scrollbar {
+        width:10px;
+        height: 10px;
+        }
+        
+        .scroll::-webkit-scrollbar-track {
+        background:#333;
+        }
+        
+        .scroll::-webkit-scrollbar-thumb {
+        background: #2e9dd8;
+        }	
+
+        @media (max-width: 600px) {
+                div{
+                   width: 100%;
+                }
+
+                #icon{
+                    left: 10%;
+                }
+
+                .menu li + li{
+                    width: 100%;
+                    margin-left: 2rem;
+                }
+
+                #sobre{
+                    width: 100%;
+                }
+
+                .title {
+                    width: 100%;
+                }
+                
+
+                #nedsc{
+                    width: 50%;
+                    top: 120%;
+                    left: 1%;
+                }
+
+                .nedsc-text{
+                    left: 15%;
+                    top: 157%;
+                }
+
+                #khun {
+                    width: 50%;
+                    top: 120%;
+                    left: 51%;
+                }
+
+                .khun-text {
+                    left: 66%;
+                    top: 157%;  
+                }
+
+                #jape{
+                    width: 50%;
+                    top: 163%;
+                    left: 1%;  
+                }
+
+                .jape-text {
+                    left: 15%;
+                    top: 200%;
+                }
+                #stuff {
+                    width: 50%;
+                    top: 163%;
+                    left: 51%;
+                }
+        
+                .stuff-text {
+                    left: 66%;
+                    top: 200%;
+                }
+
+                #angel {
+                    width: 50%;
+                    top: 207%;
+                    left: 1%;  
+                }
+
+                .angel-text {
+                    left: 15%;
+                    top: 245%;
+                }
+
+                #blucker {
+                    width: 50%;
+                    top: 207%;
+                    left: 51%;
+                }
+
+                .blucker-text {
+                    left: 66%;
+                    top: 245%;
+                }
+            
+            }

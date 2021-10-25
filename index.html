@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Macacos</title>
+    <link rel="shortcut icon" href="./81_85271.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+     <link rel="stylesheet" href="style.css" />
+
+  </head>
+  
+  <body>
+    
+     <header>
+      <nav class="menu">
+        <ul>   
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#teste">Monkeys</a></li>
+          <li><a href="./jogo.html">Jogo</a></li>
+        </ul>
+        <img src="./moon.png" id="icon">
+      </nav>
+    </header>
+    
+    <main>
+        <section class="center">
+            <div class="title-box">
+                <img src="./81_85271.png" alt="MONKEY" />
+                <h1 class="title">Olá, seja bem vindo<span>.</span></h1>
+            </div>
+        </section>
+        <section id="sobre">
+        <section class="center">
+            <h1 class="title">Sobre</h1>
+            <p>Macacolandia, site feito para todos os macacos do discordkkkk pqp só monkey.
+            </p>
+        </section>
+        </section>
+        <section id="teste">
+        <section class="center">
+            <h1 class="title">The Monkeys</h1>
+            <p></p>
+        </section>
+        </section>
+        
+          <img id="nedsc" src="https://cdn.discordapp.com/avatars/849644386014068777/a54a56f4d1f9f3176acd33a80def88c4.png?size=2048">    
+          <h1 class="nedsc-text">Nedsc</h1>
+          <img id="khun" src="https://cdn.discordapp.com/avatars/730112508274278410/6fa6852d52e47790f3392c21a365ead6.png?size=2048">
+          <h1 class="khun-text">Khun</h1>
+          <img id="jape" src="https://cdn.discordapp.com/avatars/599263086301675570/32556e09b83d531ffce556508de2f979.png?size=2048">
+          <h1 class="jape-text">Jape</h1>
+          <img id="stuff" src="https://cdn.discordapp.com/avatars/812860299878989824/90d238104782311fc3c7e390a84c0131.png?size=2048">
+          <h1 class="stuff-text">Stuff</h1>
+          <img id="angel" src="https://cdn.discordapp.com/avatars/590713609479389200/0bb3d5abe0c90219d85006bdf1ab2047.png?size=2048">
+          <h1 class="angel-text">Angel</h1>
+          <img id="blucker" src="https://cdn.discordapp.com/avatars/430361652831977475/4f01d4596c51e28d99337a075e9d56fe.png?size=2048">
+          <h1 class="blucker-text">Blucker</h1>
+    </main>
+  </body>
+</html>
+            <script src="app.js"></script>
+            <script src="a.js"></script>
+<script>
+
+  var icon = document.getElementById("icon");
+  icon.onclick = function() {
+document.body.classList.toggle("dark-theme");
+if(document.body.classList.contains("dark-theme")) {
+  icon.src = "./sun.png";
+} else {
+  icon.src = "./moon.png"
+}
+
+  }
+</script>
